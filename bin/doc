@@ -19,11 +19,11 @@ if command -v docsify; then
 	echo "serve with docsify (click url to view in browser)"
     cd ${DOCS_DIR} && docsify serve
 elif command -v python3; then
-    echo "serve http://localhost:3001 (python3 http.server)"
-    cd ${DOCS_DIR} && python3 -m http.server 3001
+    echo "serve http://localhost:8107 (python3 http.server)"
+    cd ${DOCS_DIR} && python3 -m http.server 8107
 elif command -v python2; then
-    echo "serve http://localhost:3001 (python2 SimpleHTTPServer)"
-    cd ${DOCS_DIR} && python2 -m SimpleHTTPServer 3001
+    echo "serve http://localhost:8107 (python2 SimpleHTTPServer)"
+    cd ${DOCS_DIR} && python2 -m SimpleHTTPServer 8107
 else
 	echo "no available server"
 fi
